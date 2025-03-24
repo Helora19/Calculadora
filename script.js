@@ -63,6 +63,12 @@ if(resultValue.toString().split(".")[1]?.lenght > 5) {
     currentNumber = resultValue.toString();
 }
 
+operator = null;
+firstOperand = null;
+restart = true;
+percentageValue = null;
+update_result()
+
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
 const buttonText = button.innerText;
@@ -70,6 +76,8 @@ if (/^[0-9,]+$/.test(buttonText)) {
     addDigit(buttonText);
 } else if(["+", "-", "X", "÷"].includes(buttonText)) {
     setOperator(buttonText);
+} else if (buttonText === "=") {
+    calculate();
 }
     });
 });
