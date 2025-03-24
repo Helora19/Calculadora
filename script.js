@@ -61,13 +61,20 @@ if(resultValue.toString().split(".")[1]?.lenght > 5) {
     currentNumber = parseFloat(resultValue.toFixed(5)).toString();
 } else {
     currentNumber = resultValue.toString();
-}
 
 operator = null;
 firstOperand = null;
 restart = true;
 percentageValue = null;
 update_result()
+}
+
+function clearCalculator() {
+    currentNumber = "";
+    firstOperand = null;
+    operator = null;
+    update_result(true);
+}
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
