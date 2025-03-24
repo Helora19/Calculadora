@@ -57,6 +57,12 @@ switch(operator) {
     
 }
 
+if(resultValue.toString().split(".")[1]?.lenght > 5) {
+    currentNumber = parseFloat(resultValue.toFixed(5)).toString();
+} else {
+    currentNumber = resultValue.toString();
+}
+
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
 const buttonText = button.innerText;
