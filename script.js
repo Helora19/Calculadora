@@ -85,6 +85,7 @@ if (/^[0-9,]+$/.test(buttonText)) {
     setOperator(buttonText);
 } else if (buttonText === "=") {
     calculate();
-}
+} else if (buttonText === "C") {
+    clearCalculator();
     });
 });
