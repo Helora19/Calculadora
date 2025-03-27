@@ -16,8 +16,7 @@ body {
 .calculator {
     background-color: rgb(255, 104, 205);
     width: 300px;
-    margin: 50px auto;
-    margin-top: 100px;
+    margin-top: 0px;
     margin-left: 500px;
     padding: 20px;
     border: none;
@@ -50,4 +49,11 @@ input {
     background-color: rgba(209, 250, 255, 0.877);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+.image img {
+    max-width: 350px;
+    max-height: 175px;
+    margin-top: 15px;
+    margin-bottom: 0px;
 }
