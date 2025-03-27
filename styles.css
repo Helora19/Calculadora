@@ -6,7 +6,7 @@ body {
 }
 
 @keyframes mymove {
-    0%   {background-color:rgb(255, 104, 205);}
+0%   {background-color:rgb(255, 104, 205);}
   25%  {background-color: rgb(0, 161, 22);}
   50%  {background-color:rgb(0, 161, 22);}
   100% {background-color: rgb(255, 104, 205);}
@@ -15,7 +15,7 @@ body {
   
 .calculator {
     background-color: rgb(255, 104, 205);
-    width: 300px;)
+    width: 300px;
     margin: 50px auto;
     margin-top: 100px;
     margin-left: 500px;
